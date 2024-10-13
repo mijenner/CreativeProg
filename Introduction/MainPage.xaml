@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="Introduction.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:controls="clr-namespace:Introduction.Controls">
+
+    <AbsoluteLayout>
+        <Rectangle
+            AbsoluteLayout.LayoutBounds="30,30,50,50"
+            Stroke="Red"
+            StrokeThickness="2" />
+
+        <Polygon
+            AbsoluteLayout.LayoutBounds="80,0"
+            Points="40,10 70,80 10,50"
+            Stroke="Green"
+            StrokeThickness="2" />
+
+        <Polyline
+            AbsoluteLayout.LayoutBounds="160,0"
+            Points="0,0 10,30 15,0 18,60 23,30 35,30 40,0 43,60 48,30 100,30"
+            Stroke="Red"
+            StrokeThickness="2" />
+
+        <Ellipse
+            AbsoluteLayout.LayoutBounds="20,100,30,30"
+            HorizontalOptions="Start"
+            Stroke="Red"
+            StrokeThickness="2" />
+
+        <Rectangle
+            AbsoluteLayout.LayoutBounds="80,100,30,30"
+            Stroke="Red"
+            StrokeDashArray="1,1"
+            StrokeDashOffset="5"
+            StrokeThickness="2" />
+
+        <Line
+            AbsoluteLayout.LayoutBounds="150,100"
+            Stroke="Red"
+            StrokeLineCap="Round"
+            StrokeThickness="2"
+            X1="0"
+            X2="50"
+            Y1="0"
+            Y2="20" />
+
+        <Path
+            AbsoluteLayout.LayoutBounds="20,150"
+            Data="M 0,0 L 100,100 100,50Z"
+            Stroke="Red" />
+
+        <Rectangle
+            AbsoluteLayout.LayoutBounds="150,150,80,50"
+            RadiusX="30"
+            RadiusY="30"
+            Stroke="Red"
+            StrokeThickness="2" />
+
+        <controls:HalfCircleView
+            AbsoluteLayout.LayoutBounds="20,300"
+            Direction="Up"
+            Radius="30"
+            Stroke="Green"
+            StrokeThickness="1" />
+
+        <controls:HalfCircleView
+            AbsoluteLayout.LayoutBounds="100,300"
+            Direction="Down"
+            Radius="30"
+            Stroke="Blue"
+            StrokeThickness="2" />
+
+        <controls:HalfCircleView
+            AbsoluteLayout.LayoutBounds="180,300"
+            Direction="Left"
+            Radius="30"
+            Stroke="Cyan"
+            StrokeThickness="1" />
+
+        <controls:HalfCircleView
+            AbsoluteLayout.LayoutBounds="220,300"
+            Direction="Right"
+            Radius="30"
+            Stroke="Yellow"
+            StrokeThickness="2" />
+
+
+        <Path AbsoluteLayout.LayoutBounds="150,220" Stroke="green">
+            <Path.Data>
+                <PathGeometry>
+                    <PathGeometry.Figures>
+                        <PathFigureCollection>
+                            <PathFigure StartPoint="0,30">
+                                <PathFigure.Segments>
+                                    <PathSegmentCollection>
+                                        <ArcSegment
+                                            IsLargeArc="True"
+                                            Point="0,0"
+                                            RotationAngle="180"
+                                            Size="15,15"
+                                            SweepDirection="CounterClockwise" />
+                                    </PathSegmentCollection>
+                                </PathFigure.Segments>
+                            </PathFigure>
+                        </PathFigureCollection>
+                    </PathGeometry.Figures>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
+
+    </AbsoluteLayout>
+
+</ContentPage>
